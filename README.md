@@ -2,10 +2,10 @@
 
 Docker image with developer sandbox, based on Ubuntu Linux.
 It contains:
-* Python 3.9
-* GoLang 1.17
+* Python v3.9
+* GoLang v1.17
 * Node.js v14
-* Java 8
+* Java v8
 * Docker
 
 ## Usage
