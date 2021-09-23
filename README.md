@@ -1,5 +1,13 @@
 # [docker-sandbox][github-repo]
 
+Docker image with developer sandbox, based on Ubuntu Linux.
+It contains:
+* Python 3.9
+* GoLang 1.17
+* Node.js v14
+* Java 8
+* Docker
+
 ## Usage
 
 Launch docker container with sandbox:
@@ -11,6 +19,8 @@ docker run -it --rm \
     -v "${session_dir}":/home/shared \
     --name=sandbox rev9en/sandbox
 ```
+
+If you want to use docker inside the docker image, add a ```--privileged``` parameter into the ```docker run``` command.
 
 [sandbox-hub]: https://hub.docker.com/r/rev9en/sandbox/
 [github-repo]: https://github.com/revgen/docker-sandbox/
