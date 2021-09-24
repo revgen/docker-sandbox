@@ -1,12 +1,15 @@
 FROM ubuntu:20.04
 
-LABEL image.version="1.0.0" \
-      image.description="Docker image with developer sandbox, based on Ubuntu Linux" \
-      image.date="2021-09-19" \
-      maintainer="Evgen Rusakov" \
-      url.docker="https://hub.docker.com/r/rev9en/sandbox" \
-      url.source="https://github.com/revgen/docker-sandbox"
+ARG VERSION="1.0.0"
+ARG BUILD_DATE="2021-09-19"
 
+
+LABEL maintainer="Evgen Rusakov" \
+      image.description="Docker image with developer sandbox, based on Ubuntu Linux" \
+      url.docker="https://hub.docker.com/r/rev9en/sandbox" \
+      url.source="https://github.com/revgen/docker-sandbox" \
+      image.version=$VERSION \
+      image.date=$BUILD_DATE
 
 ENV DEBIAN_FRONTEND=noninteractive
 
