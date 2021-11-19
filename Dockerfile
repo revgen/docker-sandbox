@@ -22,6 +22,8 @@ RUN apt update && \
     apt -y install sudo neovim git curl wget less tree unzip jq screen && \
     apt -y install tig dialog figlet lynx elinks && \
     apt -y install software-properties-common && \
+    apt -y install telnet && \
+    apt -y install iputils-ping && \
     apt -y install dnsutils && \
     \
     add-apt-repository -y ppa:deadsnakes/ppa && \
