@@ -1,16 +1,21 @@
 # [docker-sandbox][github-repo]
 
 Docker image with developer sandbox, based on Ubuntu Linux.
+
 It contains:
+
 * Python v3.9
-* GoLang v1.17
 * Node.js v14
-* Java v8
-* Docker
+* Scripts so install:
+  * GoLang v1.17
+  * Java v8
+  * awscli
+  * Docker
 
 ## Usage
 
 Launch docker container with sandbox:
+
 ```bash
 session_dir=${HOME}/.local/share/docker-sandbox/${USER}-session
 mkdir -p ${session_dir}
