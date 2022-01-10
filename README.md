@@ -6,11 +6,11 @@ It contains:
 
 * Python v3.9
 * Node.js v14
-* Scripts so install:
-  * GoLang v1.17
-  * Java v8
-  * awscli
-  * Docker
+* Scripts to install:
+  * GoLang v1.17: install-go.sh
+  * Java v8: install-java.sh
+  * awscli: install-docker.sh
+  * Docker: install-awscli.sh
 
 ## Usage
 
